@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "GkMCOCM49LpJ999PrOSGqaTa2JbHn1DlvSCnBrM1ImVkKTesc0zb1toWXZ6IuIq7SQ1wz/7dkPnipkeY7r3aEQ==",
+  "success": true,
+  "projectFilePath": "C:\\RepositorySource\\KOKProject\\src\\KnowledgeSpace.ViewModels\\KnowledgeSpace.ViewModels.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Eri\\.nuget\\packages\\fluentvalidation\\8.6.2\\fluentvalidation.8.6.2.nupkg.sha512",
+    "C:\\Users\\Eri\\.nuget\\packages\\fluentvalidation.aspnetcore\\8.6.2\\fluentvalidation.aspnetcore.8.6.2.nupkg.sha512",
+    "C:\\Users\\Eri\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\8.6.2\\fluentvalidation.dependencyinjectionextensions.8.6.2.nupkg.sha512",
+    "C:\\Users\\Eri\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512",
+    "C:\\Users\\Eri\\.nuget\\packages\\system.componentmodel.annotations\\4.4.1\\system.componentmodel.annotations.4.4.1.nupkg.sha512"
+  ],
+  "logs": []
+}

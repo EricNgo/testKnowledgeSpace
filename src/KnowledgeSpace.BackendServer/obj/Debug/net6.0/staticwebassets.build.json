@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "XN4UBRMRqNqTpWybdJGP5JGQ0DBm32FtePzULnJQsv8=",
+  "Source": "KnowledgeSpace.BackendServer",
+  "BasePath": "_content/KnowledgeSpace.BackendServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

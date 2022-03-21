@@ -1,0 +1,12 @@
+C:\Sourcecode\KnowledgeSpace\src\KnowledgeSpace.ViewModels\bin\Debug\net6.0\KnowledgeSpace.ViewModels.deps.json
+C:\Sourcecode\KnowledgeSpace\src\KnowledgeSpace.ViewModels\bin\Debug\net6.0\KnowledgeSpace.ViewModels.dll
+C:\Sourcecode\KnowledgeSpace\src\KnowledgeSpace.ViewModels\bin\Debug\net6.0\ref\KnowledgeSpace.ViewModels.dll
+C:\Sourcecode\KnowledgeSpace\src\KnowledgeSpace.ViewModels\bin\Debug\net6.0\KnowledgeSpace.ViewModels.pdb
+C:\Sourcecode\KnowledgeSpace\src\KnowledgeSpace.ViewModels\obj\Debug\net6.0\KnowledgeSpace.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Sourcecode\KnowledgeSpace\src\KnowledgeSpace.ViewModels\obj\Debug\net6.0\KnowledgeSpace.ViewModels.AssemblyInfoInputs.cache
+C:\Sourcecode\KnowledgeSpace\src\KnowledgeSpace.ViewModels\obj\Debug\net6.0\KnowledgeSpace.ViewModels.AssemblyInfo.cs
+C:\Sourcecode\KnowledgeSpace\src\KnowledgeSpace.ViewModels\obj\Debug\net6.0\KnowledgeSpace.ViewModels.csproj.CoreCompileInputs.cache
+C:\Sourcecode\KnowledgeSpace\src\KnowledgeSpace.ViewModels\obj\Debug\net6.0\KnowledgeSpace.ViewModels.dll
+C:\Sourcecode\KnowledgeSpace\src\KnowledgeSpace.ViewModels\obj\Debug\net6.0\ref\KnowledgeSpace.ViewModels.dll
+C:\Sourcecode\KnowledgeSpace\src\KnowledgeSpace.ViewModels\obj\Debug\net6.0\KnowledgeSpace.ViewModels.pdb
+C:\Sourcecode\KnowledgeSpace\src\KnowledgeSpace.ViewModels\obj\Debug\net6.0\KnowledgeSpace.ViewModels.csproj.AssemblyReference.cache
