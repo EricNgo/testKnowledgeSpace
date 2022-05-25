@@ -8,3 +8,13 @@ C:\Sourcecode\KnowledgeSpace\src\KnowledgeSpace.ViewModels\obj\Debug\netcoreapp3
 C:\Sourcecode\KnowledgeSpace\src\KnowledgeSpace.ViewModels\obj\Debug\netcoreapp3.1\KnowledgeSpace.ViewModels.csproj.CoreCompileInputs.cache
 C:\Sourcecode\KnowledgeSpace\src\KnowledgeSpace.ViewModels\obj\Debug\netcoreapp3.1\KnowledgeSpace.ViewModels.dll
 C:\Sourcecode\KnowledgeSpace\src\KnowledgeSpace.ViewModels\obj\Debug\netcoreapp3.1\KnowledgeSpace.ViewModels.pdb
+C:\RepositorySource\KOKProject\src\KnowledgeSpace.ViewModels\bin\Debug\netcoreapp3.1\KnowledgeSpace.ViewModels.deps.json
+C:\RepositorySource\KOKProject\src\KnowledgeSpace.ViewModels\bin\Debug\netcoreapp3.1\KnowledgeSpace.ViewModels.dll
+C:\RepositorySource\KOKProject\src\KnowledgeSpace.ViewModels\bin\Debug\netcoreapp3.1\KnowledgeSpace.ViewModels.pdb
+C:\RepositorySource\KOKProject\src\KnowledgeSpace.ViewModels\obj\Debug\netcoreapp3.1\KnowledgeSpace.ViewModels.csproj.AssemblyReference.cache
+C:\RepositorySource\KOKProject\src\KnowledgeSpace.ViewModels\obj\Debug\netcoreapp3.1\KnowledgeSpace.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\RepositorySource\KOKProject\src\KnowledgeSpace.ViewModels\obj\Debug\netcoreapp3.1\KnowledgeSpace.ViewModels.AssemblyInfoInputs.cache
+C:\RepositorySource\KOKProject\src\KnowledgeSpace.ViewModels\obj\Debug\netcoreapp3.1\KnowledgeSpace.ViewModels.AssemblyInfo.cs
+C:\RepositorySource\KOKProject\src\KnowledgeSpace.ViewModels\obj\Debug\netcoreapp3.1\KnowledgeSpace.ViewModels.csproj.CoreCompileInputs.cache
+C:\RepositorySource\KOKProject\src\KnowledgeSpace.ViewModels\obj\Debug\netcoreapp3.1\KnowledgeSpace.ViewModels.dll
+C:\RepositorySource\KOKProject\src\KnowledgeSpace.ViewModels\obj\Debug\netcoreapp3.1\KnowledgeSpace.ViewModels.pdb

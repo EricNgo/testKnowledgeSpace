@@ -3,10 +3,11 @@
     "KnowledgeSpace.BackendServer": {
       "commandName": "Project",
       "launchBrowser": true,
+      "launchUrl": "swagger",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "applicationUrl": "https://localhost:56613;http://localhost:56614"
+      "applicationUrl": "https://localhost:5000"
     }
   }
 }
