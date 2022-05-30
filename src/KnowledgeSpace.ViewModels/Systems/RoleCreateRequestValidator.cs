@@ -5,9 +5,9 @@ using System.Text;
 
 namespace KnowledgeSpace.ViewModels.Systems
 {
-    public class RoleVmValidator : AbstractValidator<RoleVm>
+    public class RoleCreateRequestValidator : AbstractValidator<RoleCreateRequest>
     {
-        public RoleVmValidator()
+        public RoleCreateRequestValidator()
         {
             //validation for each field such as name, id...
             RuleFor(x => x.Id).NotEmpty().WithMessage("Id value is required")

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace KnowledgeSpace.ViewModels.System
+namespace KnowledgeSpace.ViewModels.Systems
 {
     public class UserCreateRequest
     {
