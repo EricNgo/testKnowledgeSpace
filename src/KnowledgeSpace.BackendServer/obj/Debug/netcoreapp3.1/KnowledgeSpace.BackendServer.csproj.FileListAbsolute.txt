@@ -430,3 +430,4 @@ C:\RepositorySource\KOKProject\src\KnowledgeSpace.BackendServer\obj\Debug\netcor
 C:\RepositorySource\KOKProject\src\KnowledgeSpace.BackendServer\obj\Debug\netcoreapp3.1\KnowledgeSpace.BackendServer.dll
 C:\RepositorySource\KOKProject\src\KnowledgeSpace.BackendServer\obj\Debug\netcoreapp3.1\KnowledgeSpace.BackendServer.pdb
 C:\RepositorySource\KOKProject\src\KnowledgeSpace.BackendServer\obj\Debug\netcoreapp3.1\KnowledgeSpace.BackendServer.genruntimeconfig.cache
+C:\RepositorySource\KOKProject\src\KnowledgeSpace.BackendServer\bin\Debug\netcoreapp3.1\Google.Apis.Core.dll

@@ -496,3 +496,4 @@ C:\RepositorySource\KOKProject\test\KnowledgeSpace.BackendServer.UnitTest\obj\De
 C:\RepositorySource\KOKProject\test\KnowledgeSpace.BackendServer.UnitTest\obj\Debug\netcoreapp3.1\KnowledgeSpace.BackendServer.UnitTest.dll
 C:\RepositorySource\KOKProject\test\KnowledgeSpace.BackendServer.UnitTest\obj\Debug\netcoreapp3.1\KnowledgeSpace.BackendServer.UnitTest.pdb
 C:\RepositorySource\KOKProject\test\KnowledgeSpace.BackendServer.UnitTest\obj\Debug\netcoreapp3.1\KnowledgeSpace.BackendServer.UnitTest.genruntimeconfig.cache
+C:\RepositorySource\KOKProject\test\KnowledgeSpace.BackendServer.UnitTest\bin\Debug\netcoreapp3.1\Google.Apis.Core.dll

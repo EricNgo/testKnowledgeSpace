@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gHw589FRM4k54hhPnl3f5CLcd0hOVQa52mmSY6fq/Du0lY3Ac+ahvNPxpDUg9s48mf7j5vnZJ/KjFZXmEp4I3Q==",
+  "dgSpecHash": "ciZkU9Ql4nEMVR9L/oMgXcreMr71VnNEkRYZ5t5BEx/QtPhFj//UOLMDMJsTN1TT71Ar3mtSrrYmgs2txu2cfA==",
   "success": true,
   "projectFilePath": "C:\\RepositorySource\\KOKProject\\test\\KnowledgeSpace.BackendServer.UnitTest\\KnowledgeSpace.BackendServer.UnitTest.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\Eri\\.nuget\\packages\\fluentvalidation\\8.6.2\\fluentvalidation.8.6.2.nupkg.sha512",
     "C:\\Users\\Eri\\.nuget\\packages\\fluentvalidation.aspnetcore\\8.6.2\\fluentvalidation.aspnetcore.8.6.2.nupkg.sha512",
     "C:\\Users\\Eri\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\8.6.2\\fluentvalidation.dependencyinjectionextensions.8.6.2.nupkg.sha512",
+    "C:\\Users\\Eri\\.nuget\\packages\\google.apis.core\\1.57.0\\google.apis.core.1.57.0.nupkg.sha512",
     "C:\\Users\\Eri\\.nuget\\packages\\identitymodel\\4.1.1\\identitymodel.4.1.1.nupkg.sha512",
     "C:\\Users\\Eri\\.nuget\\packages\\identityserver4\\3.1.2\\identityserver4.3.1.2.nupkg.sha512",
     "C:\\Users\\Eri\\.nuget\\packages\\identityserver4.aspnetidentity\\3.1.2\\identityserver4.aspnetidentity.3.1.2.nupkg.sha512",
@@ -81,7 +82,7 @@
     "C:\\Users\\Eri\\.nuget\\packages\\mockqueryable.moq\\3.1.1\\mockqueryable.moq.3.1.1.nupkg.sha512",
     "C:\\Users\\Eri\\.nuget\\packages\\moq\\4.13.1\\moq.4.13.1.nupkg.sha512",
     "C:\\Users\\Eri\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
-    "C:\\Users\\Eri\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\Eri\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\Eri\\.nuget\\packages\\nuget.frameworks\\4.7.0\\nuget.frameworks.4.7.0.nupkg.sha512",
     "C:\\Users\\Eri\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Eri\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
