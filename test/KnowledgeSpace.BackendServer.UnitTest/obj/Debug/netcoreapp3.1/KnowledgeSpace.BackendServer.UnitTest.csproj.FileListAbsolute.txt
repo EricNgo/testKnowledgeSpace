@@ -497,3 +497,6 @@ C:\RepositorySource\KOKProject\test\KnowledgeSpace.BackendServer.UnitTest\obj\De
 C:\RepositorySource\KOKProject\test\KnowledgeSpace.BackendServer.UnitTest\obj\Debug\netcoreapp3.1\KnowledgeSpace.BackendServer.UnitTest.pdb
 C:\RepositorySource\KOKProject\test\KnowledgeSpace.BackendServer.UnitTest\obj\Debug\netcoreapp3.1\KnowledgeSpace.BackendServer.UnitTest.genruntimeconfig.cache
 C:\RepositorySource\KOKProject\test\KnowledgeSpace.BackendServer.UnitTest\bin\Debug\netcoreapp3.1\Google.Apis.Core.dll
+C:\RepositorySource\KOKProject\test\KnowledgeSpace.BackendServer.UnitTest\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\RepositorySource\KOKProject\test\KnowledgeSpace.BackendServer.UnitTest\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\RepositorySource\KOKProject\test\KnowledgeSpace.BackendServer.UnitTest\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
