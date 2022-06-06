@@ -500,3 +500,4 @@ C:\RepositorySource\KOKProject\test\KnowledgeSpace.BackendServer.UnitTest\bin\De
 C:\RepositorySource\KOKProject\test\KnowledgeSpace.BackendServer.UnitTest\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\RepositorySource\KOKProject\test\KnowledgeSpace.BackendServer.UnitTest\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 C:\RepositorySource\KOKProject\test\KnowledgeSpace.BackendServer.UnitTest\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\RepositorySource\KOKProject\test\KnowledgeSpace.BackendServer.UnitTest\bin\Debug\netcoreapp3.1\Dapper.dll

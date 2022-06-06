@@ -175,7 +175,7 @@ namespace KnowledgeSpace.BackendServer.Controllers
                             commandInFunction.FunctionId
                         };
 
-            query = query.Where(x => x.FunctionId == functionId);
+            query = query.Where(x => x.FunctionId == functionId).Distinct();
 
             var data = await query.Select(x => new CommandVm()
             {
@@ -211,6 +211,8 @@ namespace KnowledgeSpace.BackendServer.Controllers
 
             return Ok(data);
         }
+
+
 
         [HttpPost("{functionId}/commands")]
         public async Task<IActionResult> PostCommandToFunction(string functionId, [FromBody] AddCommandToFunctionRequest request)

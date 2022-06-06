@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4Zny5BzVUWVKT1p4Aq3cA+mY04INq7qVNb/PwHBJvm3knOS+UxTIiJ6hvR+bBZPE94zSEAGkQSJfTm2j3Vw//g==",
+  "dgSpecHash": "pp+S4izBjmxR2FvxoYoO3OZsc1GAdz796DpQVli+8V4riNhc8sVWR3Lsg8VYSc42yIZM4CwWFvbPCJHZS9exKA==",
   "success": true,
   "projectFilePath": "C:\\RepositorySource\\KOKProject\\src\\KnowledgeSpace.BackendServer\\KnowledgeSpace.BackendServer.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Eri\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\Eri\\.nuget\\packages\\fluentvalidation\\8.6.2\\fluentvalidation.8.6.2.nupkg.sha512",
     "C:\\Users\\Eri\\.nuget\\packages\\fluentvalidation.aspnetcore\\8.6.2\\fluentvalidation.aspnetcore.8.6.2.nupkg.sha512",
     "C:\\Users\\Eri\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\8.6.2\\fluentvalidation.dependencyinjectionextensions.8.6.2.nupkg.sha512",
@@ -149,7 +150,7 @@
     "C:\\Users\\Eri\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
     "C:\\Users\\Eri\\.nuget\\packages\\system.reflection.emit\\4.3.0\\system.reflection.emit.4.3.0.nupkg.sha512",
     "C:\\Users\\Eri\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0\\system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",
-    "C:\\Users\\Eri\\.nuget\\packages\\system.reflection.emit.lightweight\\4.3.0\\system.reflection.emit.lightweight.4.3.0.nupkg.sha512",
+    "C:\\Users\\Eri\\.nuget\\packages\\system.reflection.emit.lightweight\\4.7.0\\system.reflection.emit.lightweight.4.7.0.nupkg.sha512",
     "C:\\Users\\Eri\\.nuget\\packages\\system.reflection.extensions\\4.3.0\\system.reflection.extensions.4.3.0.nupkg.sha512",
     "C:\\Users\\Eri\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",
     "C:\\Users\\Eri\\.nuget\\packages\\system.reflection.primitives\\4.3.0\\system.reflection.primitives.4.3.0.nupkg.sha512",
