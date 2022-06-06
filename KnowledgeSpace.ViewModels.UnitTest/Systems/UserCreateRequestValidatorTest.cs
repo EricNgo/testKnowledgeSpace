@@ -21,9 +21,9 @@ namespace KnowledgeSpace.ViewModels.UnitTest.Systems
                 Email = "test01@gmail.com",
                 FirstName = "test",
                 LastName = "test",
-                Password = "Admin@123",
+                Password = "admin@123",
                 PhoneNumber = "09129321",
-                UserName ="test",
+                UserName ="admin",
             };
             validator = new UserCreateRequestValidator();
         }
