@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace KnowledgeSpace.ViewModels.Content
+{
+  public class CommentCreateRequest
+    {
+
+        public string Content { get; set; }
+
+        public int KnowledgeBaseId { get; set; }
+    }
+}
