@@ -6,6 +6,8 @@ using System.Data;
 using System.Threading.Tasks;
 using Dapper;
 using System.Linq;
+using KnowledgeSpace.BackendServer.Authorization;
+using KnowledgeSpace.BackendServer.Constant;
 
 namespace KnowledgeSpace.BackendServer.Controllers
 {
@@ -23,6 +25,7 @@ namespace KnowledgeSpace.BackendServer.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
+        [ClaimRequirement(FunctionCode.SYSTEM_PERMISSION, CommandCode.VIEW)]
         public async Task<IActionResult> GetCommandViews()
         {
             using (SqlConnection conn = new SqlConnection(_configuration.GetConnectionString("DefaultConnection")))

@@ -1,4 +1,6 @@
-﻿using KnowledgeSpace.BackendServer.Data;
+﻿using KnowledgeSpace.BackendServer.Authorization;
+using KnowledgeSpace.BackendServer.Constant;
+using KnowledgeSpace.BackendServer.Data;
 using KnowledgeSpace.BackendServer.Data.Entities;
 using KnowledgeSpace.BackendServer.Helpers;
 using KnowledgeSpace.BackendServer.Services;
@@ -28,8 +30,9 @@ namespace KnowledgeSpace.BackendServer.Controllers
             _sequenceService = sequenceService;
             _storageService = storageService;
         }
-
+        #region Knowledgebase
         [HttpPost]
+        [ClaimRequirement(FunctionCode.CONTENT_KNOWLEDGEBASE, CommandCode.CREATE)]
         public async Task<IActionResult> PostKnowledgeBase([FromForm] KnowledgeBaseCreateRequest request)
         {
             //var dbKnowledgeBase = await _context.KnowledgeBases.FindAsync(request.Id);
@@ -123,6 +126,7 @@ namespace KnowledgeSpace.BackendServer.Controllers
         }
 
         [HttpGet]
+        [ClaimRequirement(FunctionCode.CONTENT_KNOWLEDGEBASE, CommandCode.VIEW)]
         public async Task<IActionResult> GetKnowledgeBases()
         {
             var knowledgeBase = _context.KnowledgeBases;
@@ -140,6 +144,7 @@ namespace KnowledgeSpace.BackendServer.Controllers
         }
 
         [HttpGet("filter")]
+        [ClaimRequirement(FunctionCode.CONTENT_KNOWLEDGEBASE, CommandCode.VIEW)]
         public async Task<IActionResult> GetKnowledgeBasesPaging(string filter, int pageIndex, int pageSize)
         {
             var query = _context.KnowledgeBases.AsQueryable();
@@ -169,6 +174,7 @@ namespace KnowledgeSpace.BackendServer.Controllers
 
 
         [HttpGet("{id}")]
+        [ClaimRequirement(FunctionCode.CONTENT_KNOWLEDGEBASE, CommandCode.VIEW)]
         public async Task<IActionResult> GetById(int id)
         {
             var request = await _context.KnowledgeBases.FindAsync(id);
@@ -203,6 +209,8 @@ namespace KnowledgeSpace.BackendServer.Controllers
         }
 
         [HttpPut("{id}")]
+
+        [ClaimRequirement(FunctionCode.CONTENT_KNOWLEDGEBASE, CommandCode.UPDATE)]
         public async Task<IActionResult> PutKnowledgeBase(int id, [FromBody] KnowledgeBaseCreateRequest request)
         {
             var knowledgeBase= await _context.KnowledgeBases.FindAsync(id);
@@ -241,6 +249,7 @@ namespace KnowledgeSpace.BackendServer.Controllers
         }
 
         [HttpDelete("{id}")]
+        [ClaimRequirement(FunctionCode.CONTENT_KNOWLEDGEBASE, CommandCode.DELETE)]
         public async Task<IActionResult> DeleteKnowledgeBase(int id)
         {
             var knowledgeBase = await _context.KnowledgeBases.FindAsync(id);
@@ -294,7 +303,7 @@ namespace KnowledgeSpace.BackendServer.Controllers
             return BadRequest();
         }
 
-        #region KnowledgeBase
+    
         private static KnowledgeBaseVm CreateKnowledgeBaseVm(KnowledgeBase knowledgeBase)
         {
             return new KnowledgeBaseVm()
@@ -337,11 +346,12 @@ namespace KnowledgeSpace.BackendServer.Controllers
             };
         }
 
-#endregion 
+        #endregion 
 
         #region Comments
 
         [HttpGet("{knowledgeBaseId}/comments/filter")]
+        [ClaimRequirement(FunctionCode.CONTENT_COMMENT, CommandCode.VIEW)]
         public async Task<IActionResult> GetCommentsPaging(int knowledgeBaseId, string filter, int pageIndex, int pageSize)
         {
             var query = _context.Comments.Where(x => x.KnowledgeBaseId == knowledgeBaseId).AsQueryable();
@@ -372,6 +382,7 @@ namespace KnowledgeSpace.BackendServer.Controllers
         }
 
         [HttpGet("{knowledgeBaseId}/comments/{commentId}")]
+        [ClaimRequirement(FunctionCode.CONTENT_COMMENT, CommandCode.VIEW)]
         public async Task<IActionResult> GetCommentDetail(int commentId)
         {
             var comment = await _context.Comments.FindAsync(commentId);
@@ -392,6 +403,7 @@ namespace KnowledgeSpace.BackendServer.Controllers
         }
 
         [HttpPost("{knowledgeBaseId}/comments")]
+        [ClaimRequirement(FunctionCode.CONTENT_COMMENT, CommandCode.CREATE)]
         public async Task<IActionResult> PostComment(int knowledgeBaseId, [FromBody] CommentCreateRequest request)
         {
             var comment = new Comment()
@@ -420,6 +432,7 @@ namespace KnowledgeSpace.BackendServer.Controllers
         }
 
         [HttpPut("{knowledgeBaseId}/comments/{commentId}")]
+        [ClaimRequirement(FunctionCode.CONTENT_COMMENT, CommandCode.UPDATE)]
         public async Task<IActionResult> PutComment(int commentId, [FromBody] CommentCreateRequest request)
         {
             var comment = await _context.Comments.FindAsync(commentId);
@@ -441,6 +454,7 @@ namespace KnowledgeSpace.BackendServer.Controllers
         }
 
         [HttpDelete("{knowledgeBaseId}/comments/{commentId}")]
+        [ClaimRequirement(FunctionCode.CONTENT_COMMENT, CommandCode.DELETE)]
         public async Task<IActionResult> DeleteComment(int knowledgeBaseId, int commentId)
         {
             var comment = await _context.Comments.FindAsync(commentId);
@@ -477,6 +491,7 @@ namespace KnowledgeSpace.BackendServer.Controllers
         #region Votes
 
         [HttpGet("{knowledgeBaseId}/votes")]
+
         public async Task<IActionResult> GetVotes(int knowledgeBaseId)
         {
             var votes = await _context.Votes
@@ -681,7 +696,7 @@ namespace KnowledgeSpace.BackendServer.Controllers
         [HttpGet("{knowledgeBaseId}/attachments")]
         public async Task<IActionResult> GetAttachment(int knowledgeBaseId, string filter, int pageIndex, int pageSize)
         {
-            var query = _context.Attachments.Where(x => x.KnowledgeBaseId == knowledgeBaseId).Select(c => new AttachmentVm()
+            var query = await _context.Attachments.Where(x => x.KnowledgeBaseId == knowledgeBaseId).Select(c => new AttachmentVm()
             {
              Id  = c.Id,
               FileName = c.FileName,
