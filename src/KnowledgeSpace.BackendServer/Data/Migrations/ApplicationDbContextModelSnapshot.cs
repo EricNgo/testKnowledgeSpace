@@ -68,9 +68,6 @@ namespace KnowledgeSpace.BackendServer.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("CommentId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
@@ -97,11 +94,6 @@ namespace KnowledgeSpace.BackendServer.Data.Migrations
 
                     b.Property<DateTime?>("LastModifiedDate")
                         .HasColumnType("datetime2");
-
-                    b.Property<string>("Type")
-                        .IsRequired()
-                        .HasColumnType("varchar(10)")
-                        .HasMaxLength(10);
 
                     b.HasKey("Id");
 
@@ -361,9 +353,6 @@ namespace KnowledgeSpace.BackendServer.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("CommentId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Content")
                         .HasColumnType("nvarchar(500)")
                         .HasMaxLength(500);
@@ -375,6 +364,7 @@ namespace KnowledgeSpace.BackendServer.Data.Migrations
                         .HasColumnType("bit");
 
                     b.Property<int?>("KnowledgeBaseId")
+                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<DateTime?>("LastModifiedDate")

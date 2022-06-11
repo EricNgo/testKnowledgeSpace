@@ -30,12 +30,12 @@ namespace KnowledgeSpace.BackendServer.Data.Entities
 
         public int? KnowledgeBaseId { get; set; }
 
-        public int? CommentId { get; set; }
+        //public int? CommentId { get; set; }
 
-        [Required]
-        [MaxLength(10)]
-        [Column(TypeName = "varchar(10)")]
-        public string Type { get; set; }
+        //[Required]
+        //[MaxLength(10)]
+        //[Column(TypeName = "varchar(10)")]
+        //public string Type { get; set; }
 
         public DateTime CreateDate { get; set; }
         public DateTime? LastModifiedDate { get; set; }

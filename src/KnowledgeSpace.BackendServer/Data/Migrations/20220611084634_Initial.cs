@@ -85,8 +85,6 @@ namespace KnowledgeSpace.BackendServer.Data.Migrations
                     FileType = table.Column<string>(type: "varchar(4)", maxLength: 4, nullable: false),
                     FileSize = table.Column<long>(nullable: false),
                     KnowledgeBaseId = table.Column<int>(nullable: true),
-                    CommentId = table.Column<int>(nullable: true),
-                    Type = table.Column<string>(type: "varchar(10)", maxLength: 10, nullable: false),
                     CreateDate = table.Column<DateTime>(nullable: false),
                     LastModifiedDate = table.Column<DateTime>(nullable: true)
                 },
@@ -241,8 +239,7 @@ namespace KnowledgeSpace.BackendServer.Data.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    KnowledgeBaseId = table.Column<int>(nullable: true),
-                    CommentId = table.Column<int>(nullable: true),
+                    KnowledgeBaseId = table.Column<int>(nullable: false),
                     Content = table.Column<string>(maxLength: 500, nullable: true),
                     ReportUserId = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: true),
                     CreateDate = table.Column<DateTime>(nullable: false),
