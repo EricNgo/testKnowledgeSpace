@@ -1,4 +1,4 @@
-﻿++Solution 'KnowledgeSpace' ‎(4 of 4 projects)
+﻿++Solution 'KnowledgeSpace' ‎(5 of 5 projects)
 i:{00000000-0000-0000-0000-000000000000}:KnowledgeSpace.sln
 ++Solution Items
 i:{00000000-0000-0000-0000-000000000000}:Solution Items
@@ -6,42 +6,95 @@ i:{00000000-0000-0000-0000-000000000000}:Solution Items
 i:{ec774ee3-7c15-4958-8c0a-35ff85125757}:C:\RepositorySource\KOKProject\README.md
 ++KnowledgeSpace.ViewModels
 i:{00000000-0000-0000-0000-000000000000}:KnowledgeSpace.ViewModels
+i:{4b6f3c7e-6a2b-4fa3-9e38-7e307522d4e6}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\bin\debug\netcoreapp3.1\knowledgespace.viewmodels.dll
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\bin\debug\netcoreapp3.1\knowledgespace.viewmodels.dll
 ++Dependencies
-i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:>966
-i:{3ae48e6a-64b5-4b5f-9c79-9aa877da4071}:>1522
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2234
-i:{823e7245-c84b-451f-a44a-bd0732ff771d}:>2064
-++System
-i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\system\
-++Pagination.cs
-i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\system\pagination.cs
-i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\pagination.cs
-++RoleViewmodel.cs
-i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\system\roleviewmodel.cs
+i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:>1020
+i:{3ae48e6a-64b5-4b5f-9c79-9aa877da4071}:>1706
+i:{4b6f3c7e-6a2b-4fa3-9e38-7e307522d4e6}:>1705
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2467
+i:{823e7245-c84b-451f-a44a-bd0732ff771d}:>2290
+++Content
+i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\content\
+++CatergoryCreateRequest.cs
+i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\content\catergorycreaterequest.cs
+++CatergoryVm.cs
+i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\content\catergoryvm.cs
+++CommentCreateRequest.cs
+i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\content\commentcreaterequest.cs
+++CommentCreateRequestValidator.cs
+i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\content\commentcreaterequestvalidator.cs
+++CommentVm.cs
+i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\content\commentvm.cs
+++KnowledgeBaseCreateRequest.cs
+i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\content\knowledgebasecreaterequest.cs
+++KnowledgeBaseQuickVm.cs
+i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\content\knowledgebasequickvm.cs
+++KnowledgeBaseVm.cs
+i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\content\knowledgebasevm.cs
+++ReportCreateRequest.cs
+i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\content\reportcreaterequest.cs
+++ReportVm.cs
+i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\content\reportvm.cs
+++VoteCreateRequest.cs
+i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\content\votecreaterequest.cs
+++VoteVm.cs
+i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\content\votevm.cs
 ++Systems
 i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\systems\
+i:{4b6f3c7e-6a2b-4fa3-9e38-7e307522d4e6}:c:\repositorysource\kokproject\knowledgespace.viewmodels.unittest\systems\
+++AddCommandToFunctionRequest.cs
+i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\systems\addcommandtofunctionrequest.cs
+++CommandVm.cs
+i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\systems\commandvm.cs
+++FunctionCreateRequest.cs
+i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\systems\functioncreaterequest.cs
+++FunctionCreateRequestValidator.cs
+i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\systems\functioncreaterequestvalidator.cs
+++FunctionVm.cs
+i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\systems\functionvm.cs
+++PermissionScreenVm.cs
+i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\systems\permissionscreenvm.cs
+++PermissionVm.cs
+i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\systems\permissionvm.cs
+++RoleCreateRequest.cs
+i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\systems\rolecreaterequest.cs
+++RoleCreateRequestValidator.cs
+i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\systems\rolecreaterequestvalidator.cs
 ++RoleVm.cs
 i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\systems\rolevm.cs
-++RoleVmValidator.cs
-i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\systems\rolevmvalidator.cs
+++UpdatePermissionRequest.cs
+i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\systems\updatepermissionrequest.cs
+++UserCreateRequest.cs
+i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\systems\usercreaterequest.cs
+++UserCreateRequestValidator.cs
+i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\systems\usercreaterequestvalidator.cs
+++UserPasswordChangeRequest.cs
+i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\systems\userpasswordchangerequest.cs
+++UserVm.cs
+i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\systems\uservm.cs
+++Pagination.cs
+i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\pagination.cs
 ++Frameworks
 i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:frameworks
 i:{3ae48e6a-64b5-4b5f-9c79-9aa877da4071}:frameworks
+i:{4b6f3c7e-6a2b-4fa3-9e38-7e307522d4e6}:frameworks
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:frameworks
 i:{823e7245-c84b-451f-a44a-bd0732ff771d}:frameworks
 ++Packages
 i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:packages
 i:{3ae48e6a-64b5-4b5f-9c79-9aa877da4071}:packages
+i:{4b6f3c7e-6a2b-4fa3-9e38-7e307522d4e6}:packages
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:packages
 ++Microsoft.NETCore.App
 i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:c:\repositorysource\kokproject\src\knowledgespace.viewmodels\microsoft.netcore.app
 i:{3ae48e6a-64b5-4b5f-9c79-9aa877da4071}:c:\repositorysource\kokproject\test\knowledgespace.backendserver.unittest\microsoft.netcore.app
+i:{4b6f3c7e-6a2b-4fa3-9e38-7e307522d4e6}:c:\repositorysource\kokproject\knowledgespace.viewmodels.unittest\microsoft.netcore.app
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\microsoft.netcore.app
 i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\microsoft.netcore.app
 ++FluentValidation.AspNetCore (8.6.2)
-i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:>2245
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2280
+i:{7cb68d7a-7e8e-42bf-b2b3-c3c907758ed5}:>2478
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2528
 ++Tests
 i:{00000000-0000-0000-0000-000000000000}:Tests
 ++KnowledgeSpace.BackendServer.UnitTest
@@ -50,14 +103,22 @@ i:{97cdf33e-5213-4c5f-971e-512f7a7d74bb}:KnowledgeSpace.BackendServer.UnitTest
 i:{3ae48e6a-64b5-4b5f-9c79-9aa877da4071}:c:\repositorysource\kokproject\test\knowledgespace.backendserver.unittest\controllers\
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\controllers\
 i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\controllers\
+++FunctionsControllerTest.cs
+i:{3ae48e6a-64b5-4b5f-9c79-9aa877da4071}:c:\repositorysource\kokproject\test\knowledgespace.backendserver.unittest\controllers\functionscontrollertest.cs
 ++RolesControllerTest.cs
 i:{3ae48e6a-64b5-4b5f-9c79-9aa877da4071}:c:\repositorysource\kokproject\test\knowledgespace.backendserver.unittest\controllers\rolescontrollertest.cs
+++UsersControllerTest.cs
+i:{3ae48e6a-64b5-4b5f-9c79-9aa877da4071}:c:\repositorysource\kokproject\test\knowledgespace.backendserver.unittest\controllers\userscontrollertest.cs
+++InMemoryDbContextFactory.cs
+i:{3ae48e6a-64b5-4b5f-9c79-9aa877da4071}:c:\repositorysource\kokproject\test\knowledgespace.backendserver.unittest\inmemorydbcontextfactory.cs
 ++Analyzers
 i:{3ae48e6a-64b5-4b5f-9c79-9aa877da4071}:analyzers
+i:{4b6f3c7e-6a2b-4fa3-9e38-7e307522d4e6}:analyzers
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:analyzers
 i:{823e7245-c84b-451f-a44a-bd0732ff771d}:analyzers
 ++Projects
 i:{3ae48e6a-64b5-4b5f-9c79-9aa877da4071}:projects
+i:{4b6f3c7e-6a2b-4fa3-9e38-7e307522d4e6}:projects
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:projects
 ++Microsoft.CodeAnalysis.Analyzers
 i:{3ae48e6a-64b5-4b5f-9c79-9aa877da4071}:c:\users\eri\.nuget\packages\microsoft.codeanalysis.analyzers\2.9.4\analyzers\dotnet\cs\microsoft.codeanalysis.analyzers.dll
@@ -66,28 +127,56 @@ i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\users\eri\.nuget\packages\microsoft.
 i:{3ae48e6a-64b5-4b5f-9c79-9aa877da4071}:c:\users\eri\.nuget\packages\microsoft.codeanalysis.analyzers\2.9.4\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.analyzers.dll
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\users\eri\.nuget\packages\microsoft.codeanalysis.analyzers\2.9.4\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.analyzers.dll
 ++Microsoft.EntityFrameworkCore.Analyzers
-i:{3ae48e6a-64b5-4b5f-9c79-9aa877da4071}:c:\users\eri\.nuget\packages\microsoft.entityframeworkcore.analyzers\3.1.3\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{3ae48e6a-64b5-4b5f-9c79-9aa877da4071}:c:\users\eri\.nuget\packages\microsoft.entityframeworkcore.analyzers\3.1.10\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\users\eri\.nuget\packages\microsoft.entityframeworkcore.analyzers\3.1.3\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
 ++xunit.analyzers
 i:{3ae48e6a-64b5-4b5f-9c79-9aa877da4071}:c:\users\eri\.nuget\packages\xunit.analyzers\0.10.0\analyzers\dotnet\cs\xunit.analyzers.dll
 ++coverlet.collector (1.0.1)
-i:{3ae48e6a-64b5-4b5f-9c79-9aa877da4071}:>2251
+i:{3ae48e6a-64b5-4b5f-9c79-9aa877da4071}:>2490
+++Microsoft.EntityFrameworkCore.InMemory (3.1.10)
+i:{3ae48e6a-64b5-4b5f-9c79-9aa877da4071}:>2487
 ++Microsoft.NET.Test.Sdk (16.2.0)
-i:{3ae48e6a-64b5-4b5f-9c79-9aa877da4071}:>2246
+i:{3ae48e6a-64b5-4b5f-9c79-9aa877da4071}:>2484
 ++MockQueryable.Moq (3.1.1)
-i:{3ae48e6a-64b5-4b5f-9c79-9aa877da4071}:>2247
+i:{3ae48e6a-64b5-4b5f-9c79-9aa877da4071}:>2485
 ++Moq (4.13.1)
-i:{3ae48e6a-64b5-4b5f-9c79-9aa877da4071}:>2250
+i:{3ae48e6a-64b5-4b5f-9c79-9aa877da4071}:>2489
 ++xunit (2.4.0)
-i:{3ae48e6a-64b5-4b5f-9c79-9aa877da4071}:>2248
+i:{3ae48e6a-64b5-4b5f-9c79-9aa877da4071}:>2486
 ++xunit.runner.visualstudio (2.4.0)
-i:{3ae48e6a-64b5-4b5f-9c79-9aa877da4071}:>2249
+i:{3ae48e6a-64b5-4b5f-9c79-9aa877da4071}:>2488
 ++KnowledgeSpace.BackendServer
 i:{3ae48e6a-64b5-4b5f-9c79-9aa877da4071}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\bin\debug\netcoreapp3.1\knowledgespace.backendserver.dll
 i:{00000000-0000-0000-0000-000000000000}:KnowledgeSpace.BackendServer
+++KnowledgeSpace.ViewModels.UnitTest
+i:{97cdf33e-5213-4c5f-971e-512f7a7d74bb}:KnowledgeSpace.ViewModels.UnitTest
+++RoleCreateRequestValidatorTest.cs
+i:{4b6f3c7e-6a2b-4fa3-9e38-7e307522d4e6}:c:\repositorysource\kokproject\knowledgespace.viewmodels.unittest\systems\rolecreaterequestvalidatortest.cs
+++UserCreateRequestValidatorTest.cs
+i:{4b6f3c7e-6a2b-4fa3-9e38-7e307522d4e6}:c:\repositorysource\kokproject\knowledgespace.viewmodels.unittest\systems\usercreaterequestvalidatortest.cs
+++Program.cs
+i:{4b6f3c7e-6a2b-4fa3-9e38-7e307522d4e6}:c:\repositorysource\kokproject\knowledgespace.viewmodels.unittest\program.cs
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\program.cs
+i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\program.cs
+++Microsoft.AspNetCore.App.Analyzers
+i:{4b6f3c7e-6a2b-4fa3-9e38-7e307522d4e6}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.3\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{4b6f3c7e-6a2b-4fa3-9e38-7e307522d4e6}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.3\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{4b6f3c7e-6a2b-4fa3-9e38-7e307522d4e6}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{4b6f3c7e-6a2b-4fa3-9e38-7e307522d4e6}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{4b6f3c7e-6a2b-4fa3-9e38-7e307522d4e6}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.3\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++System.Text.Json.SourceGeneration
+i:{4b6f3c7e-6a2b-4fa3-9e38-7e307522d4e6}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.3\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++xunit.assert (2.4.1)
+i:{4b6f3c7e-6a2b-4fa3-9e38-7e307522d4e6}:>2503
+++xunit.extensibility.core (2.4.1)
+i:{4b6f3c7e-6a2b-4fa3-9e38-7e307522d4e6}:>2504
 ++Connected Services 
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2235
-i:{823e7245-c84b-451f-a44a-bd0732ff771d}:>2236
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2468
+i:{823e7245-c84b-451f-a44a-bd0732ff771d}:>2469
 ++Properties
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\properties\
 i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\properties\
@@ -100,31 +189,69 @@ i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\know
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\areas\identity\
 ++Pages
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\areas\identity\pages\
-++Account
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\areas\identity\pages\account\
-++_ViewImports.cshtml
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\areas\identity\pages\_viewimports.cshtml
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\areas\identity\pages\account\_viewimports.cshtml
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\views\_viewimports.cshtml
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\areas\identity\pages\account\manage\_viewimports.cshtml
-i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\views\_viewimports.cshtml
-++_ViewStart.cshtml
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\areas\identity\pages\_viewstart.cshtml
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\views\_viewstart.cshtml
-i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\views\_viewstart.cshtml
-++Error.cshtml
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\areas\identity\pages\error.cshtml
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\views\shared\error.cshtml
-i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\views\shared\error.cshtml
 ++IdentityHostingStartup.cs
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\areas\identity\identityhostingstartup.cs
+++BaseController.cs
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\controllers\basecontroller.cs
+++CategoriesController.cs
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\controllers\categoriescontroller.cs
+++CommandsController.cs
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\controllers\commandscontroller.cs
+++FunctionController.cs
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\controllers\functioncontroller.cs
 ++HomeController.cs
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\controllers\homecontroller.cs
 i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\controllers\homecontroller.cs
+++KnowledgeBaseController.cs
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\controllers\knowledgebasecontroller.cs
+++PermissionsController.cs
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\controllers\permissionscontroller.cs
 ++RolesController.cs
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\controllers\rolescontroller.cs
+++UserController.cs
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\controllers\usercontroller.cs
 ++Data
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\
+++Entities
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\entities\
+++ActivityLog.cs
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\entities\activitylog.cs
+++Attachment.cs
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\entities\attachment.cs
+++Category.cs
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\entities\category.cs
+++Command.cs
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\entities\command.cs
+++CommandInFunction.cs
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\entities\commandinfunction.cs
+++Comment.cs
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\entities\comment.cs
+++Function.cs
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\entities\function.cs
+++KnowledgeBase.cs
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\entities\knowledgebase.cs
+++Label.cs
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\entities\label.cs
+++LabelInKnowledgeBase.cs
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\entities\labelinknowledgebase.cs
+++Permission.cs
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\entities\permission.cs
+++Report.cs
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\entities\report.cs
+++User.cs
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\entities\user.cs
+++Vote.cs
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\entities\vote.cs
+++Interfaces
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\interfaces\
+++Migrations
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\migrations\
+++ApplicationDbContext.cs
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\applicationdbcontext.cs
+++DbInitializer.cs
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\dbinitializer.cs
+++DesignTimeDbContextFactory.cs
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\designtimedbcontextfactory.cs
 ++IdentityServer
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\identityserver\
 ++Config.cs
@@ -134,6 +261,12 @@ i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\know
 i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\models\
 ++Services
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\services\
+++EmailSenderService.cs
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\services\emailsenderservice.cs
+++ISequenceService.cs
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\services\isequenceservice.cs
+++SequenceService.cs
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\services\sequenceservice.cs
 ++Views
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\views\
 i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\views\
@@ -142,18 +275,19 @@ i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\know
 i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\appsettings.json
 ++bundleconfig.json
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\bundleconfig.json
-++Program.cs
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\program.cs
-i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\program.cs
 ++ScaffoldingReadMe.txt
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\scaffoldingreadme.txt
 ++Startup.cs
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\startup.cs
 i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\startup.cs
+++tempkey.jwk
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\tempkey.jwk
+++tempkey.rsa
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\tempkey.rsa
 ++Secrets
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2294
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2543
 ++SQL Server Database
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2292
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2541
 ++launchSettings.json
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\properties\launchsettings.json
 i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\properties\launchsettings.json
@@ -177,6 +311,99 @@ i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\know
 ++favicon.ico
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\favicon.ico
 i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\favicon.ico
+++Account
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\areas\identity\pages\account\
+++_ViewImports.cshtml
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\areas\identity\pages\_viewimports.cshtml
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\views\_viewimports.cshtml
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\areas\identity\pages\account\_viewimports.cshtml
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\areas\identity\pages\account\manage\_viewimports.cshtml
+i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\views\_viewimports.cshtml
+++_ViewStart.cshtml
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\areas\identity\pages\_viewstart.cshtml
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\views\_viewstart.cshtml
+i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\views\_viewstart.cshtml
+++Error.cshtml
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\areas\identity\pages\error.cshtml
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\views\shared\error.cshtml
+i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\views\shared\error.cshtml
+++IDateTracking.cs
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\interfaces\idatetracking.cs
+++20200327161404_Initial.cs
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\migrations\20200327161404_initial.cs
+++ApplicationDbContextModelSnapshot.cs
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\migrations\applicationdbcontextmodelsnapshot.cs
+++Home
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\views\home\
+i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\views\home\
+++Shared
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\views\shared\
+i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\views\shared\
+++appsettings.Development.json
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\appsettings.development.json
+i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\appsettings.development.json
+++Dependency secrets1 is missing and needs to be configured for current profile.
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2544
+++Dependency mssql1 is missing and needs to be configured for current profile.
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2542
+++Microsoft.AspNetCore.Analyzers
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.App
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\microsoft.aspnetcore.app
+i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\microsoft.aspnetcore.app
+++Dapper (2.0.123)
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2531
+++Google.Apis.Core (1.57.0)
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2537
+++IdentityServer4.AspNetIdentity (3.1.2)
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2529
+++Microsoft.AspNetCore.Identity.EntityFrameworkCore (3.1.3)
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2532
+++Microsoft.AspNetCore.Identity.UI (3.1.1)
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2538
+++Microsoft.EntityFrameworkCore (3.1.3)
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2525
+++Microsoft.EntityFrameworkCore.SqlServer (3.1.3)
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2526
+++Microsoft.EntityFrameworkCore.Tools (3.1.3)
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2534
+++Microsoft.VisualStudio.Web.CodeGeneration.Design (3.1.1)
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2536
+++Serilog (2.9.0)
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2535
+++Serilog.Extensions.Hosting (3.0.0)
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2530
+++Serilog.Sinks.Console (3.1.1)
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2533
+++Swashbuckle.AspNetCore (5.2.1)
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2527
+++serviceDependencies.local.json
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\properties\servicedependencies.local.json
+++site.css
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\css\site.css
+i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\css\site.css
+++site.js
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\js\site.js
+i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\js\site.js
+++bootstrap
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\lib\bootstrap\
+i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\lib\bootstrap\
+++jquery
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\lib\jquery\
+i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\lib\jquery\
+++jquery-validation
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\lib\jquery-validation\
+i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\lib\jquery-validation\
+++jquery-validation-unobtrusive
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\lib\jquery-validation-unobtrusive\
+i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\lib\jquery-validation-unobtrusive\
 ++Manage
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\areas\identity\pages\account\manage\
 ++_StatusMessage.cshtml
@@ -214,93 +441,42 @@ i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\know
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\areas\identity\pages\account\resetpasswordconfirmation.cshtml
 ++Error.cshtml.cs
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\areas\identity\pages\error.cshtml.cs
-++Entities
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\entities\
-++Interfaces
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\interfaces\
-++Migrations
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\migrations\
-++ApplicationDbContext.cs
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\applicationdbcontext.cs
-++DbInitializer.cs
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\dbinitializer.cs
-++DesignTimeDbContextFactory.cs
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\designtimedbcontextfactory.cs
-++EmailSenderService.cs
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\services\emailsenderservice.cs
-++Home
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\views\home\
-i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\views\home\
-++Shared
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\views\shared\
-i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\views\shared\
-++appsettings.Development.json
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\appsettings.development.json
-i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\appsettings.development.json
-++Dependency secrets1 is missing and needs to be configured for current profile.
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2295
-++Dependency mssql1 is missing and needs to be configured for current profile.
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2293
-++Microsoft.AspNetCore.Analyzers
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
-i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
-++Microsoft.AspNetCore.Components.Analyzers
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
-i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
-++Microsoft.AspNetCore.Mvc.Analyzers
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
-i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
-++Microsoft.AspNetCore.App
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\microsoft.aspnetcore.app
-i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\microsoft.aspnetcore.app
-++IdentityServer4 (4.1.2)
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2289
-++IdentityServer4.AspNetIdentity (4.1.2)
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2281
-++Microsoft.AspNetCore.Identity.EntityFrameworkCore (3.1.3)
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2283
-++Microsoft.AspNetCore.Identity.UI (3.1.1)
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2288
-++Microsoft.EntityFrameworkCore (3.1.3)
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2277
-++Microsoft.EntityFrameworkCore.SqlServer (3.1.3)
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2278
-++Microsoft.EntityFrameworkCore.Tools (3.1.3)
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2285
-++Microsoft.VisualStudio.Web.CodeGeneration.Design (3.1.5)
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2287
-++Serilog (2.9.0)
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2286
-++Serilog.Extensions.Hosting (3.0.0)
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2282
-++Serilog.Sinks.Console (3.1.1)
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2284
-++Swashbuckle.AspNetCore (6.3.0)
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:>2279
-++serviceDependencies.local.json
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\properties\servicedependencies.local.json
-++site.css
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\css\site.css
-i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\css\site.css
-++site.js
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\js\site.js
-i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\js\site.js
-++bootstrap
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\lib\bootstrap\
-i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\lib\bootstrap\
-++jquery
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\lib\jquery\
-i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\lib\jquery\
-++jquery-validation
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\lib\jquery-validation\
-i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\lib\jquery-validation\
-++jquery-validation-unobtrusive
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\lib\jquery-validation-unobtrusive\
-i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\lib\jquery-validation-unobtrusive\
+++20200327161404_Initial.Designer.cs
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\migrations\20200327161404_initial.designer.cs
+++Index.cshtml
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\views\home\index.cshtml
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\areas\identity\pages\account\manage\index.cshtml
+i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\views\home\index.cshtml
 ++_Layout.cshtml
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\areas\identity\pages\account\manage\_layout.cshtml
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\views\shared\_layout.cshtml
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\areas\identity\pages\account\manage\_layout.cshtml
 i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\views\shared\_layout.cshtml
+++_LoginPartial.cshtml
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\views\shared\_loginpartial.cshtml
+++_ValidationScriptsPartial.cshtml
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\views\shared\_validationscriptspartial.cshtml
+i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\views\shared\_validationscriptspartial.cshtml
+++dist
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\lib\bootstrap\dist\
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\lib\jquery\dist\
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\lib\jquery-validation\dist\
+i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\lib\bootstrap\dist\
+i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\lib\jquery\dist\
+i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\lib\jquery-validation\dist\
+++LICENSE
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\lib\bootstrap\license
+i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\lib\bootstrap\license
+++LICENSE.txt
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\lib\jquery\license.txt
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\lib\jquery-validation-unobtrusive\license.txt
+i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\lib\jquery\license.txt
+i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\lib\jquery-validation-unobtrusive\license.txt
+++LICENSE.md
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\lib\jquery-validation\license.md
+i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\lib\jquery-validation\license.md
+++jquery.validate.unobtrusive.js
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
 ++_ManageNav.cshtml
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\areas\identity\pages\account\manage\_managenav.cshtml
 ++ChangePassword.cshtml
@@ -319,10 +495,6 @@ i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\know
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\areas\identity\pages\account\manage\externallogins.cshtml
 ++GenerateRecoveryCodes.cshtml
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\areas\identity\pages\account\manage\generaterecoverycodes.cshtml
-++Index.cshtml
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\areas\identity\pages\account\manage\index.cshtml
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\views\home\index.cshtml
-i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\views\home\index.cshtml
 ++ManageNavPages.cs
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\areas\identity\pages\account\manage\managenavpages.cs
 ++PersonalData.cshtml
@@ -365,66 +537,18 @@ i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\know
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\areas\identity\pages\account\resetpassword.cshtml.cs
 ++ResetPasswordConfirmation.cshtml.cs
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\areas\identity\pages\account\resetpasswordconfirmation.cshtml.cs
-++ActivityLog.cs
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\entities\activitylog.cs
-++Attachment.cs
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\entities\attachment.cs
-++Category.cs
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\entities\category.cs
-++Command.cs
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\entities\command.cs
-++CommandInFunction.cs
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\entities\commandinfunction.cs
-++Comment.cs
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\entities\comment.cs
-++Function.cs
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\entities\function.cs
-++KnowledgeBase.cs
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\entities\knowledgebase.cs
-++Label.cs
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\entities\label.cs
-++LabelInKnowledgeBase.cs
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\entities\labelinknowledgebase.cs
-++Permission.cs
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\entities\permission.cs
-++Report.cs
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\entities\report.cs
-++User.cs
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\entities\user.cs
-++Vote.cs
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\entities\vote.cs
-++IDateTracking.cs
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\interfaces\idatetracking.cs
-++20200327161404_Initial.cs
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\migrations\20200327161404_initial.cs
-++ApplicationDbContextModelSnapshot.cs
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\migrations\applicationdbcontextmodelsnapshot.cs
-++_LoginPartial.cshtml
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\views\shared\_loginpartial.cshtml
-++_ValidationScriptsPartial.cshtml
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\views\shared\_validationscriptspartial.cshtml
-i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\views\shared\_validationscriptspartial.cshtml
-++dist
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\lib\bootstrap\dist\
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\lib\jquery\dist\
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\lib\jquery-validation\dist\
-i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\lib\bootstrap\dist\
-i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\lib\jquery\dist\
-i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\lib\jquery-validation\dist\
-++LICENSE
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\lib\bootstrap\license
-i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\lib\bootstrap\license
-++LICENSE.txt
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\lib\jquery\license.txt
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\lib\jquery-validation-unobtrusive\license.txt
-i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\lib\jquery\license.txt
-i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\lib\jquery-validation-unobtrusive\license.txt
-++LICENSE.md
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\lib\jquery-validation\license.md
-i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\lib\jquery-validation\license.md
-++jquery.validate.unobtrusive.js
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
-i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+++jquery.js
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\lib\jquery\dist\jquery.js
+i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\lib\jquery\dist\jquery.js
+++additional-methods.js
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\lib\jquery-validation\dist\additional-methods.js
+i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\lib\jquery-validation\dist\additional-methods.js
+++jquery.validate.js
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+++jquery.validate.unobtrusive.min.js
+i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
 ++ChangePassword.cshtml.cs
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\areas\identity\pages\account\manage\changepassword.cshtml.cs
 ++DeletePersonalData.cshtml.cs
@@ -453,20 +577,6 @@ i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\know
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\areas\identity\pages\account\manage\showrecoverycodes.cshtml.cs
 ++TwoFactorAuthentication.cshtml.cs
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\areas\identity\pages\account\manage\twofactorauthentication.cshtml.cs
-++20200327161404_Initial.Designer.cs
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\data\migrations\20200327161404_initial.designer.cs
-++jquery.js
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\lib\jquery\dist\jquery.js
-i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\lib\jquery\dist\jquery.js
-++additional-methods.js
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\lib\jquery-validation\dist\additional-methods.js
-i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\lib\jquery-validation\dist\additional-methods.js
-++jquery.validate.js
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\lib\jquery-validation\dist\jquery.validate.js
-i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\lib\jquery-validation\dist\jquery.validate.js
-++jquery.validate.unobtrusive.min.js
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
-i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
 ++bootstrap.css
 i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\wwwroot\lib\bootstrap\dist\css\bootstrap.css
 i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\lib\bootstrap\dist\css\bootstrap.css
@@ -508,7 +618,7 @@ i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\know
 ++KnowledgeSpace.WebPortal
 i:{00000000-0000-0000-0000-000000000000}:KnowledgeSpace.WebPortal
 ++No service dependencies discovered
-i:{823e7245-c84b-451f-a44a-bd0732ff771d}:>2238
+i:{823e7245-c84b-451f-a44a-bd0732ff771d}:>2471
 ++ErrorViewModel.cs
 i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\models\errorviewmodel.cs
 ++Privacy.cshtml
@@ -541,7 +651,3 @@ i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\know
 i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
 ++bootstrap.bundle.min.js.map
 i:{823e7245-c84b-451f-a44a-bd0732ff771d}:c:\repositorysource\kokproject\src\knowledgespace.webportal\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
-++tempkey.jwk
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\tempkey.jwk
-++tempkey.rsa
-i:{410a3bab-d6c2-4bbd-a4b7-74af56c30153}:c:\repositorysource\kokproject\src\knowledgespace.backendserver\tempkey.rsa

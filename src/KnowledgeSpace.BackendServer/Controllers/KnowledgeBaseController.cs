@@ -1,5 +1,6 @@
 ﻿using KnowledgeSpace.BackendServer.Data;
 using KnowledgeSpace.BackendServer.Data.Entities;
+using KnowledgeSpace.BackendServer.Helpers;
 using KnowledgeSpace.BackendServer.Services;
 using KnowledgeSpace.ViewModels;
 using KnowledgeSpace.ViewModels.Content;
@@ -7,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Threading.Tasks;
+
 
 namespace KnowledgeSpace.BackendServer.Controllers
 {
@@ -46,8 +48,15 @@ namespace KnowledgeSpace.BackendServer.Controllers
             function.Id = await _sequenceService.GetKnowledgeBaseNewId();
             _context.KnowledgeBases.Add(function);
          
-            var result = await _context.SaveChangesAsync();
+        
+            //Process label
+            if (!string.IsNullOrEmpty(request.Labels))
+            {
+                await ProcessLabel(request, function);
+            }
 
+
+            var result = await _context.SaveChangesAsync();
             if (result > 0)
             {
                 return CreatedAtAction(nameof(GetById), new { id = function.Id }, request);
@@ -55,6 +64,31 @@ namespace KnowledgeSpace.BackendServer.Controllers
             else
             {
                 return BadRequest();
+            }
+        }
+
+        private async Task ProcessLabel(KnowledgeBaseCreateRequest request, KnowledgeBase knowledgeBase)
+        {
+            string[] labels = request.Labels.Split(',');
+            foreach (var labelText in labels)
+            {
+                var labelId = TextHelper.ToUnsignString(labelText);
+                var existingLabel = await _context.Labels.FindAsync(labelId);
+                if (existingLabel == null)
+                {
+                    var labelEntity = new Label()
+                    {
+                        Id = labelId,
+                        Name = labelText
+                    };
+                    _context.Labels.Add(labelEntity);
+                }
+                var labelInKnowledgeBase = new LabelInKnowledgeBase()
+                {
+                    KnowledgeBaseId = knowledgeBase.Id,
+                    LabelId = labelId
+                };
+                _context.LabelInKnowledgeBases.Add(labelInKnowledgeBase);
             }
         }
 
@@ -433,7 +467,7 @@ namespace KnowledgeSpace.BackendServer.Controllers
         {
             var vote = await _context.Votes.FindAsync(knowledgeBaseId, request.UserId);
             if (vote != null)
-                return BadRequest("This user has been voted for this KB");
+                return BadRequest("This user has been voted ");
 
             vote = new Vote()
             {
