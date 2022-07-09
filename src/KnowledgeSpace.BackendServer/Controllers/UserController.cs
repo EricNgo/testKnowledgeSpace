@@ -2,6 +2,7 @@
 using KnowledgeSpace.BackendServer.Constant;
 using KnowledgeSpace.BackendServer.Data;
 using KnowledgeSpace.BackendServer.Data.Entities;
+using KnowledgeSpace.BackendServer.Helpers;
 using KnowledgeSpace.ViewModels;
 //using KnowledgeSpace.ViewModels.System;
 using KnowledgeSpace.ViewModels.Systems;
@@ -20,38 +21,38 @@ namespace KnowledgeSpace.BackendServer.Controllers
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly ApplicationDbContext _context;
 
-        public UserController(UserManager<User> userManager,RoleManager<IdentityRole> roleManager,
+        public UserController(UserManager<User> userManager,
+            RoleManager<IdentityRole> roleManager,
             ApplicationDbContext context)
         {
-            _userManager = userManager; _roleManager = roleManager;
+            _userManager = userManager;
+            _roleManager = roleManager;
             _context = context;
         }
 
-       
         [HttpPost]
         [ClaimRequirement(FunctionCode.SYSTEM_USER, CommandCode.CREATE)]
+        [ApiValidationFilter]
         public async Task<IActionResult> PostUser(UserCreateRequest request)
         {
             var user = new User()
             {
                 Id = Guid.NewGuid().ToString(),
                 Email = request.Email,
-            Dob = request.Dob,
-            UserName = request.UserName,
-            LastName = request.LastName,
-            FirstName = request.FirstName,  
-            PhoneNumber = request.PhoneNumber
-
-
+                Dob = request.Dob,
+                UserName = request.UserName,
+                LastName = request.LastName,
+                FirstName = request.FirstName,
+                PhoneNumber = request.PhoneNumber
             };
-            var result = await _userManager.CreateAsync(user);
+            var result = await _userManager.CreateAsync(user, request.Password);
             if (result.Succeeded)
             {
                 return CreatedAtAction(nameof(GetById), new { id = user.Id }, request);
             }
             else
             {
-                return BadRequest(result.Errors);
+                return BadRequest(new ApiResponseBadRequest(result));
             }
         }
 
@@ -61,16 +62,15 @@ namespace KnowledgeSpace.BackendServer.Controllers
         {
             var users = _userManager.Users;
 
-            var uservms = await users.Select(r => new UserVm()
+            var uservms = await users.Select(u => new UserVm()
             {
-                Id = r.Id,
-                UserName = r.UserName,
-                Dob=r.Dob,  
-                Email = r.Email,    
-                PhoneNumber = r.PhoneNumber ,
-                LastName = r.LastName,
-                FirstName=r.FirstName
-                
+                Id = u.Id,
+                UserName = u.UserName,
+                Dob = u.Dob,
+                Email = u.Email,
+                PhoneNumber = u.PhoneNumber,
+                FirstName = u.FirstName,
+                LastName = u.LastName
             }).ToListAsync();
 
             return Ok(uservms);
@@ -83,24 +83,22 @@ namespace KnowledgeSpace.BackendServer.Controllers
             var query = _userManager.Users;
             if (!string.IsNullOrEmpty(filter))
             {
-                query = query.Where(x => x.Id.Contains(filter) 
-                    || x.UserName.Contains(filter)
-                    || x.PhoneNumber.Contains(filter)
-                    || x.Email.Contains(filter)
-                    || x.FirstName.Contains(filter));
+                query = query.Where(x => x.Email.Contains(filter)
+                || x.UserName.Contains(filter)
+                || x.PhoneNumber.Contains(filter));
             }
             var totalRecords = await query.CountAsync();
             var items = await query.Skip((pageIndex - 1 * pageSize))
                 .Take(pageSize)
-                .Select(r => new UserVm()
+                .Select(u => new UserVm()
                 {
-                    Id = r.Id,
-                    UserName = r.UserName,
-                    Dob = r.Dob,
-                    Email = r.Email,
-                    PhoneNumber = r.PhoneNumber,
-                    LastName = r.LastName,
-                    FirstName = r.FirstName
+                    Id = u.Id,
+                    UserName = u.UserName,
+                    Dob = u.Dob,
+                    Email = u.Email,
+                    PhoneNumber = u.PhoneNumber,
+                    FirstName = u.FirstName,
+                    LastName = u.LastName
                 })
                 .ToListAsync();
 
@@ -112,14 +110,14 @@ namespace KnowledgeSpace.BackendServer.Controllers
             return Ok(pagination);
         }
 
-      
+        //URL: GET: http://localhost:5001/api/users/{id}
         [HttpGet("{id}")]
         [ClaimRequirement(FunctionCode.SYSTEM_USER, CommandCode.VIEW)]
         public async Task<IActionResult> GetById(string id)
         {
             var user = await _userManager.FindByIdAsync(id);
             if (user == null)
-                return NotFound();
+                return NotFound(new ApiNotFoundResponse($"Cannot found user with id: {id}"));
 
             var userVm = new UserVm()
             {
@@ -128,23 +126,21 @@ namespace KnowledgeSpace.BackendServer.Controllers
                 Dob = user.Dob,
                 Email = user.Email,
                 PhoneNumber = user.PhoneNumber,
-                LastName = user.LastName,
-                FirstName = user.FirstName
+                FirstName = user.FirstName,
+                LastName = user.LastName
             };
             return Ok(userVm);
         }
 
-     
         [HttpPut("{id}")]
         [ClaimRequirement(FunctionCode.SYSTEM_USER, CommandCode.UPDATE)]
         public async Task<IActionResult> PutUser(string id, [FromBody] UserCreateRequest request)
         {
-         
             var user = await _userManager.FindByIdAsync(id);
             if (user == null)
-                return NotFound();
+                return NotFound(new ApiNotFoundResponse($"Cannot found user with id: {id}"));
 
-            user.FirstName =request.FirstName;
+            user.FirstName = request.FirstName;
             user.LastName = request.LastName;
             user.Dob = request.Dob;
 
@@ -154,30 +150,26 @@ namespace KnowledgeSpace.BackendServer.Controllers
             {
                 return NoContent();
             }
-            return BadRequest(result.Errors);
+            return BadRequest(new ApiResponseBadRequest(result));
         }
 
         [HttpPut("{id}/change-password")]
         [ClaimRequirement(FunctionCode.SYSTEM_USER, CommandCode.UPDATE)]
+        [ApiValidationFilter]
         public async Task<IActionResult> PutUserPassword(string id, [FromBody] UserPasswordChangeRequest request)
         {
-
             var user = await _userManager.FindByIdAsync(id);
             if (user == null)
-                return NotFound();
-
-
+                return NotFound(new ApiNotFoundResponse($"Cannot found user with id: {id}"));
 
             var result = await _userManager.ChangePasswordAsync(user, request.CurrentPassword, request.NewPassword);
-
 
             if (result.Succeeded)
             {
                 return NoContent();
             }
-            return BadRequest(result.Errors);
+            return BadRequest(new ApiResponseBadRequest(result));
         }
-
 
         [HttpDelete("{id}")]
         [ClaimRequirement(FunctionCode.SYSTEM_USER, CommandCode.DELETE)]
@@ -198,12 +190,12 @@ namespace KnowledgeSpace.BackendServer.Controllers
                     Dob = user.Dob,
                     Email = user.Email,
                     PhoneNumber = user.PhoneNumber,
-                    LastName = user.LastName,
-                    FirstName = user.FirstName
+                    FirstName = user.FirstName,
+                    LastName = user.LastName
                 };
                 return Ok(uservm);
             }
-            return BadRequest(result.Errors);
+            return BadRequest(new ApiResponseBadRequest(result));
         }
 
         [HttpGet("{userId}/menu")]
