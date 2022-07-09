@@ -6,6 +6,7 @@ using FluentValidation.AspNetCore;
 using IdentityServer4.Configuration;
 using KnowledgeSpace.BackendServer.Data;
 using KnowledgeSpace.BackendServer.Data.Entities;
+using KnowledgeSpace.BackendServer.Extensions;
 using KnowledgeSpace.BackendServer.IdentityServer;
 using KnowledgeSpace.BackendServer.Services;
 using KnowledgeSpace.ViewModels.Systems;
@@ -71,6 +72,11 @@ namespace KnowledgeSpace.BackendServer
                 options.Password.RequireDigit = true;
                 options.Password.RequireUppercase = true;
                 options.User.RequireUniqueEmail = true;
+            });
+
+            services.Configure<ApiBehaviorOptions>(options =>
+            {
+                options.SuppressModelStateInvalidFilter = true;
             });
 
             services.AddControllersWithViews()
@@ -145,7 +151,7 @@ namespace KnowledgeSpace.BackendServer
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UserErrorWrapping();
             app.UseStaticFiles();
 
             app.UseIdentityServer();

@@ -1,9 +1,11 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Threading.Tasks;
 using KnowledgeSpace.BackendServer.Authorization;
 using KnowledgeSpace.BackendServer.Constant;
 using KnowledgeSpace.BackendServer.Data;
 using KnowledgeSpace.BackendServer.Data.Entities;
+using KnowledgeSpace.BackendServer.Helpers;
 using KnowledgeSpace.ViewModels;
 using KnowledgeSpace.ViewModels.Systems;
 using Microsoft.AspNetCore.Mvc;
@@ -23,11 +25,13 @@ namespace KnowledgeSpace.BackendServer.Controllers
 
         [HttpPost]
         [ClaimRequirement(FunctionCode.SYSTEM_FUNCTION, CommandCode.CREATE)]
+        [ApiValidationFilter]
         public async Task<IActionResult> PostFunction([FromBody] FunctionCreateRequest request)
         {
+            //throw new Exception();
             var dbFunction = await _context.Functions.FindAsync(request.Id);
             if (dbFunction != null)
-                return BadRequest($"Function with id {request.Id} is existed.");
+                return BadRequest(new ApiResponseBadRequest($"Funtion with id : {request.Id} is existed."));
 
             var function = new Function()
             {
@@ -46,7 +50,7 @@ namespace KnowledgeSpace.BackendServer.Controllers
             }
             else
             {
-                return BadRequest();
+                return BadRequest(new ApiResponseBadRequest("Create Function is failed."));
             }
         }
 
@@ -65,7 +69,7 @@ namespace KnowledgeSpace.BackendServer.Controllers
                 ParentId = u.ParentId
             }).ToListAsync();
 
-            return Ok(functionvms);
+            return Ok( functionvms);
         }
 
         [HttpGet("filter")]
@@ -106,7 +110,7 @@ namespace KnowledgeSpace.BackendServer.Controllers
         {
             var function = await _context.Functions.FindAsync(id);
             if (function == null)
-                return NotFound();
+                return NotFound(new ApiNotFoundResponse($"Can not found mentioned function with id : {id} "));
 
             var functionVm = new FunctionVm()
             {
@@ -121,11 +125,12 @@ namespace KnowledgeSpace.BackendServer.Controllers
 
         [HttpPut("{id}")]
         [ClaimRequirement(FunctionCode.SYSTEM_FUNCTION, CommandCode.UPDATE)]
+        [ApiValidationFilter]
         public async Task<IActionResult> PutFunction(string id, [FromBody] FunctionCreateRequest request)
         {
             var function = await _context.Functions.FindAsync(id);
             if (function == null)
-                return NotFound();
+                return  NotFound(new ApiNotFoundResponse($"Can not found mentioned function with id : {id} "));
 
             function.Name = request.Name;
             function.ParentId = request.ParentId;
@@ -148,7 +153,7 @@ namespace KnowledgeSpace.BackendServer.Controllers
         {
             var function = await _context.Functions.FindAsync(id);
             if (function == null)
-                return NotFound();
+                return NotFound(new ApiNotFoundResponse($"Can not found mentioned function with id : {id} "));
 
             _context.Functions.Remove(function);
             var result = await _context.SaveChangesAsync();
@@ -226,11 +231,12 @@ namespace KnowledgeSpace.BackendServer.Controllers
 
         [HttpPost("{functionId}/commands")]
         [ClaimRequirement(FunctionCode.SYSTEM_FUNCTION, CommandCode.CREATE)]
+        [ApiValidationFilter]
         public async Task<IActionResult> PostCommandToFunction(string functionId, [FromBody] AddCommandToFunctionRequest request)
         {
             var commandInFunction = await _context.CommandInFunctions.FindAsync(request.CommandId, request.FunctionId);
             if (commandInFunction != null)
-                return BadRequest($"This command has been added to function");
+                return BadRequest(new ApiResponseBadRequest ($"This command has been added to function"));
 
             var entity = new CommandInFunction()
             {
@@ -246,7 +252,7 @@ namespace KnowledgeSpace.BackendServer.Controllers
             }
             else
             {
-                return BadRequest();
+                return BadRequest(new ApiResponseBadRequest($"Add this command to function failed"));
             }
         }
 
@@ -256,7 +262,7 @@ namespace KnowledgeSpace.BackendServer.Controllers
         {
             var commandInFunction = await _context.CommandInFunctions.FindAsync(functionId, commandId);
             if (commandInFunction == null)
-                return BadRequest($"This command is not existed in function");
+                return BadRequest(new ApiResponseBadRequest($"This command has been deleted to function or not existed"));
 
             var entity = new CommandInFunction()
             {
@@ -272,7 +278,7 @@ namespace KnowledgeSpace.BackendServer.Controllers
             }
             else
             {
-                return BadRequest();
+                return BadRequest(new ApiResponseBadRequest($"This command failed"));
             }
         }
 
