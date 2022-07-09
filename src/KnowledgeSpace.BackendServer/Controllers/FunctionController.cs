@@ -10,17 +10,18 @@ using KnowledgeSpace.ViewModels;
 using KnowledgeSpace.ViewModels.Systems;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-
+using Microsoft.Extensions.Logging;
 
 namespace KnowledgeSpace.BackendServer.Controllers
 {
     public class FunctionController :BaseController
     {
         private readonly ApplicationDbContext _context;
-
-        public FunctionController(ApplicationDbContext context)
+        private readonly ILogger<FunctionController> _logger;
+        public FunctionController(ApplicationDbContext context, ILogger<FunctionController> logger)
         {
             _context = context;
+            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
 
         [HttpPost]
@@ -29,6 +30,7 @@ namespace KnowledgeSpace.BackendServer.Controllers
         public async Task<IActionResult> PostFunction([FromBody] FunctionCreateRequest request)
         {
             //throw new Exception();
+            _logger.LogInformation("Begin PostFunction Api Information");
             var dbFunction = await _context.Functions.FindAsync(request.Id);
             if (dbFunction != null)
                 return BadRequest(new ApiResponseBadRequest($"Funtion with id : {request.Id} is existed."));
@@ -46,10 +48,12 @@ namespace KnowledgeSpace.BackendServer.Controllers
 
             if (result > 0)
             {
+                _logger.LogInformation("End PostFunction Api Information - SUCCESS");
                 return CreatedAtAction(nameof(GetById), new { id = function.Id }, request);
             }
             else
             {
+                _logger.LogInformation("End PostFunction Api Information - FAILED");
                 return BadRequest(new ApiResponseBadRequest("Create Function is failed."));
             }
         }

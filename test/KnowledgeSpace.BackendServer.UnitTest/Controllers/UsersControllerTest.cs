@@ -53,12 +53,19 @@ namespace KnowledgeSpace.BackendServer.UnitTest.Controllers
         [Fact]
         public async Task PostUser_ValidInput_Success()
         {
-            _mockUserManager.Setup(x => x.CreateAsync(It.IsAny<User>()))
+            _mockUserManager.Setup(x => x.CreateAsync(It.IsAny<User>(), It.IsAny<string>()))
                 .ReturnsAsync(IdentityResult.Success);
-            var userController = new UserController(_mockUserManager.Object, _mockRoleManager.Object, _context);
-            var result = await userController.PostUser(new UserCreateRequest()
+
+            _mockUserManager.Setup(x => x.FindByNameAsync(It.IsAny<string>()))
+                .ReturnsAsync(new User()
+                {
+                    UserName = "test"
+                });
+
+            var usersController = new UserController(_mockUserManager.Object, _mockRoleManager.Object, _context);
+            var result = await usersController.PostUser(new UserCreateRequest()
             {
-               UserName = "test"
+                UserName = "test"
             });
 
             Assert.NotNull(result);
@@ -68,13 +75,14 @@ namespace KnowledgeSpace.BackendServer.UnitTest.Controllers
         [Fact]
         public async Task PostUser_ValidInput_Failed()
         {
-            _mockUserManager.Setup(x => x.CreateAsync(It.IsAny<User>()))
+            _mockUserManager.Setup(x => x.CreateAsync(It.IsAny<User>(), It.IsAny<string>()))
                 .ReturnsAsync(IdentityResult.Failed(new IdentityError[] { }));
-            var userController = new UserController(_mockUserManager.Object, _mockRoleManager.Object, _context);
-            var result = await userController.PostUser(new UserCreateRequest()
+
+            var usersController = new UserController(_mockUserManager.Object, _mockRoleManager.Object, _context);
+            var result = await usersController.PostUser(new UserCreateRequest()
             {
                 UserName = "test"
-            }) ;
+            });
 
             Assert.NotNull(result);
             Assert.IsType<BadRequestObjectResult>(result);

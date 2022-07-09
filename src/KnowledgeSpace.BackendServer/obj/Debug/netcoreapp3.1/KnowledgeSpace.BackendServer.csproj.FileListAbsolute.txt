@@ -432,3 +432,12 @@ C:\RepositorySource\KOKProject\src\KnowledgeSpace.BackendServer\obj\Debug\netcor
 C:\RepositorySource\KOKProject\src\KnowledgeSpace.BackendServer\obj\Debug\netcoreapp3.1\KnowledgeSpace.BackendServer.genruntimeconfig.cache
 C:\RepositorySource\KOKProject\src\KnowledgeSpace.BackendServer\bin\Debug\netcoreapp3.1\Google.Apis.Core.dll
 C:\RepositorySource\KOKProject\src\KnowledgeSpace.BackendServer\bin\Debug\netcoreapp3.1\Dapper.dll
+C:\RepositorySource\KOKProject\src\KnowledgeSpace.BackendServer\bin\Debug\netcoreapp3.1\appsettings.Production.json
+C:\RepositorySource\KOKProject\src\KnowledgeSpace.BackendServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\RepositorySource\KOKProject\src\KnowledgeSpace.BackendServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\RepositorySource\KOKProject\src\KnowledgeSpace.BackendServer\bin\Debug\netcoreapp3.1\Serilog.AspNetCore.dll
+C:\RepositorySource\KOKProject\src\KnowledgeSpace.BackendServer\bin\Debug\netcoreapp3.1\Serilog.Formatting.Compact.dll
+C:\RepositorySource\KOKProject\src\KnowledgeSpace.BackendServer\bin\Debug\netcoreapp3.1\Serilog.Settings.Configuration.dll
+C:\RepositorySource\KOKProject\src\KnowledgeSpace.BackendServer\bin\Debug\netcoreapp3.1\Serilog.Sinks.Async.dll
+C:\RepositorySource\KOKProject\src\KnowledgeSpace.BackendServer\bin\Debug\netcoreapp3.1\Serilog.Sinks.Debug.dll
+C:\RepositorySource\KOKProject\src\KnowledgeSpace.BackendServer\bin\Debug\netcoreapp3.1\Serilog.Sinks.File.dll
