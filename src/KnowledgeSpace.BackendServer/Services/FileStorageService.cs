@@ -1,13 +1,14 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace KnowledgeSpace.BackendServer.Services
 {
-    public class FileStorageService :IStorageService
+    public class FileStorageService : IStorageService
     {
-
         private readonly string _userContentFolder;
         private const string USER_CONTENT_FOLDER_NAME = "user-attachments";
 

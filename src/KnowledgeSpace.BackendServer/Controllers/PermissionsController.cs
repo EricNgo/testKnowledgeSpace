@@ -1,13 +1,13 @@
-﻿using KnowledgeSpace.ViewModels.Systems;
+﻿using Dapper;
+using KnowledgeSpace.BackendServer.Authorization;
+using KnowledgeSpace.BackendServer.Constants;
+using KnowledgeSpace.ViewModels.Systems;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 using System.Data;
-using System.Threading.Tasks;
-using Dapper;
 using System.Linq;
-using KnowledgeSpace.BackendServer.Authorization;
-using KnowledgeSpace.BackendServer.Constant;
+using System.Threading.Tasks;
 
 namespace KnowledgeSpace.BackendServer.Controllers
 {
@@ -48,11 +48,7 @@ namespace KnowledgeSpace.BackendServer.Controllers
                         GROUP BY f.Id,f.Name, f.ParentId
                         order BY f.ParentId";
 
-                var result = await conn.QueryAsync<PermissionScreenVm>(sql,
-                                                                       null,
-                                                                       null,
-                                                                       120,
-                                                                       CommandType.Text);
+                var result = await conn.QueryAsync<PermissionScreenVm>(sql, null, null, 120, CommandType.Text);
                 return Ok(result.ToList());
             }
         }

@@ -1,15 +1,17 @@
-﻿using System.IO;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace KnowledgeSpace.BackendServer.Services
 {
     public interface IStorageService
     {
-        string GetFileUrl(string Filename);
+        string GetFileUrl(string fileName);
 
-        Task SaveFileAsync(Stream mediaBinaryStream, string Filename);
+        Task SaveFileAsync(Stream mediaBinaryStream, string fileName);
 
-        Task DeleteFileAsync(string Filename);
-
+        Task DeleteFileAsync(string fileName);
     }
 }

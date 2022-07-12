@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\RepositorySource\\KOKProject\\src\\KnowledgeSpace.WebPortal\\KnowledgeSpace.WebPortal.csproj",
+      "projectUniqueName": "C:\\RepositorySource\\11\\src\\KnowledgeSpace.WebPortal\\KnowledgeSpace.WebPortal.csproj",
       "projectName": "KnowledgeSpace.WebPortal",
-      "projectPath": "C:\\RepositorySource\\KOKProject\\src\\KnowledgeSpace.WebPortal\\KnowledgeSpace.WebPortal.csproj",
+      "projectPath": "C:\\RepositorySource\\11\\src\\KnowledgeSpace.WebPortal\\KnowledgeSpace.WebPortal.csproj",
       "packagesPath": "C:\\Users\\Eri\\.nuget\\packages\\",
-      "outputPath": "C:\\RepositorySource\\KOKProject\\src\\KnowledgeSpace.WebPortal\\obj\\",
+      "outputPath": "C:\\RepositorySource\\11\\src\\KnowledgeSpace.WebPortal\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Eri\\AppData\\Roaming\\NuGet\\NuGet.Config",

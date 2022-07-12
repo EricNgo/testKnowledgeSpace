@@ -4,9 +4,8 @@ using System.Text;
 
 namespace KnowledgeSpace.ViewModels.Systems
 {
-   public class PermissionScreenVm
+    public class PermissionScreenVm
     {
-
         public string Id { get; set; }
 
         public string Name { get; set; }
@@ -22,6 +21,5 @@ namespace KnowledgeSpace.ViewModels.Systems
         public bool HasView { get; set; }
 
         public bool HasApprove { get; set; }
-
     }
 }

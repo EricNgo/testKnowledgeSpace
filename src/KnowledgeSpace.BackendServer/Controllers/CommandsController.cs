@@ -9,29 +9,26 @@ namespace KnowledgeSpace.BackendServer.Controllers
 {
     public class CommandsController : BaseController
     {
+        private readonly ApplicationDbContext _context;
 
-      
-            private readonly ApplicationDbContext _context;
-
-            public CommandsController(ApplicationDbContext context)
-            {
-                _context = context;
-            }
-
-            [HttpGet()]
-            public async Task<IActionResult> GetCommants()
-            {
-            var user = User.Identity.Name;
-                var commands = _context.Commands;
-
-                var commandVms = await commands.Select(u => new CommandVm()
-                {
-                    Id = u.Id,
-                    Name = u.Name,
-                }).ToListAsync();
-
-                return Ok(commandVms);
-            }
+        public CommandsController(ApplicationDbContext context)
+        {
+            _context = context;
         }
-    
+
+        [HttpGet]
+        public async Task<IActionResult> GetCommants()
+        {
+            var user = User.Identity.Name;
+            var commands = _context.Commands;
+
+            var commandVms = await commands.Select(u => new CommandVm()
+            {
+                Id = u.Id,
+                Name = u.Name,
+            }).ToListAsync();
+
+            return Ok(commandVms);
+        }
+    }
 }

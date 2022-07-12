@@ -2,14 +2,13 @@
 using System.Threading.Tasks;
 using KnowledgeSpace.BackendServer.Data.Entities;
 using KnowledgeSpace.BackendServer.Helpers;
-using KnowledgeSpace.ViewModels.Content;
-
+using KnowledgeSpace.ViewModels.Contents;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace KnowledgeSpace.BackendServer.Controllers
 {
-    public partial class KnowledgeBaseController
+    public partial class KnowledgeBasesController
     {
         #region Votes
 
@@ -31,11 +30,11 @@ namespace KnowledgeSpace.BackendServer.Controllers
 
         [HttpPost("{knowledgeBaseId}/votes")]
         [ApiValidationFilter]
-        public async Task<IActionResult> PostVote(int knowledgeBaseId, [FromBody] VoteCreateRequest request)
+        public async Task<IActionResult> PostVote(int knowledgeBaseId, [FromBody]VoteCreateRequest request)
         {
             var vote = await _context.Votes.FindAsync(knowledgeBaseId, request.UserId);
             if (vote != null)
-                return BadRequest(new ApiResponseBadRequest("This user has been voted for this KB"));
+                return BadRequest(new ApiBadRequestResponse("This user has been voted for this KB"));
 
             vote = new Vote()
             {
@@ -46,7 +45,7 @@ namespace KnowledgeSpace.BackendServer.Controllers
 
             var knowledgeBase = await _context.KnowledgeBases.FindAsync(knowledgeBaseId);
             if (knowledgeBase != null)
-                return BadRequest(new ApiResponseBadRequest($"Cannot found knowledge base with id {knowledgeBaseId}"));
+                return BadRequest(new ApiBadRequestResponse($"Cannot found knowledge base with id {knowledgeBaseId}"));
 
             knowledgeBase.NumberOfVotes = knowledgeBase.NumberOfVotes.GetValueOrDefault(0) + 1;
             _context.KnowledgeBases.Update(knowledgeBase);
@@ -58,7 +57,7 @@ namespace KnowledgeSpace.BackendServer.Controllers
             }
             else
             {
-                return BadRequest(new ApiResponseBadRequest($"Vote failed"));
+                return BadRequest(new ApiBadRequestResponse($"Vote failed"));
             }
         }
 
@@ -71,7 +70,7 @@ namespace KnowledgeSpace.BackendServer.Controllers
 
             var knowledgeBase = await _context.KnowledgeBases.FindAsync(knowledgeBaseId);
             if (knowledgeBase != null)
-                return BadRequest(new ApiResponseBadRequest($"Cannot found knowledge base with id {knowledgeBaseId}"));
+                return BadRequest(new ApiBadRequestResponse($"Cannot found knowledge base with id {knowledgeBaseId}"));
 
             knowledgeBase.NumberOfVotes = knowledgeBase.NumberOfVotes.GetValueOrDefault(0) - 1;
             _context.KnowledgeBases.Update(knowledgeBase);
@@ -82,7 +81,7 @@ namespace KnowledgeSpace.BackendServer.Controllers
             {
                 return Ok();
             }
-            return BadRequest(new ApiResponseBadRequest($"Delete vote failed"));
+            return BadRequest(new ApiBadRequestResponse($"Delete vote failed"));
         }
 
         #endregion Votes

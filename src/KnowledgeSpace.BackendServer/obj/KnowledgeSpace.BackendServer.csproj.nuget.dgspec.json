@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\RepositorySource\\KOKProject\\src\\KnowledgeSpace.BackendServer\\KnowledgeSpace.BackendServer.csproj": {}
+    "C:\\RepositorySource\\11\\src\\KnowledgeSpace.BackendServer\\KnowledgeSpace.BackendServer.csproj": {}
   },
   "projects": {
-    "C:\\RepositorySource\\KOKProject\\src\\KnowledgeSpace.BackendServer\\KnowledgeSpace.BackendServer.csproj": {
+    "C:\\RepositorySource\\11\\src\\KnowledgeSpace.BackendServer\\KnowledgeSpace.BackendServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\RepositorySource\\KOKProject\\src\\KnowledgeSpace.BackendServer\\KnowledgeSpace.BackendServer.csproj",
+        "projectUniqueName": "C:\\RepositorySource\\11\\src\\KnowledgeSpace.BackendServer\\KnowledgeSpace.BackendServer.csproj",
         "projectName": "KnowledgeSpace.BackendServer",
-        "projectPath": "C:\\RepositorySource\\KOKProject\\src\\KnowledgeSpace.BackendServer\\KnowledgeSpace.BackendServer.csproj",
+        "projectPath": "C:\\RepositorySource\\11\\src\\KnowledgeSpace.BackendServer\\KnowledgeSpace.BackendServer.csproj",
         "packagesPath": "C:\\Users\\Eri\\.nuget\\packages\\",
-        "outputPath": "C:\\RepositorySource\\KOKProject\\src\\KnowledgeSpace.BackendServer\\obj\\",
+        "outputPath": "C:\\RepositorySource\\11\\src\\KnowledgeSpace.BackendServer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Eri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\RepositorySource\\KOKProject\\src\\KnowledgeSpace.ViewModels\\KnowledgeSpace.ViewModels.csproj": {
-                "projectPath": "C:\\RepositorySource\\KOKProject\\src\\KnowledgeSpace.ViewModels\\KnowledgeSpace.ViewModels.csproj"
+              "C:\\RepositorySource\\11\\src\\KnowledgeSpace.ViewModels\\KnowledgeSpace.ViewModels.csproj": {
+                "projectPath": "C:\\RepositorySource\\11\\src\\KnowledgeSpace.ViewModels\\KnowledgeSpace.ViewModels.csproj"
               }
             }
           }
@@ -46,15 +46,11 @@
           "dependencies": {
             "Dapper": {
               "target": "Package",
-              "version": "[2.0.123, )"
+              "version": "[2.0.30, )"
             },
             "FluentValidation.AspNetCore": {
               "target": "Package",
               "version": "[8.6.2, )"
-            },
-            "Google.Apis.Core": {
-              "target": "Package",
-              "version": "[1.57.0, )"
             },
             "IdentityServer4.AspNetIdentity": {
               "target": "Package",
@@ -88,31 +84,31 @@
             },
             "Serilog": {
               "target": "Package",
-              "version": "[2.11.0, )"
+              "version": "[2.9.0, )"
             },
             "Serilog.AspNetCore": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[3.2.0, )"
             },
             "Serilog.Extensions.Hosting": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[3.0.0, )"
             },
             "Serilog.Settings.Configuration": {
               "target": "Package",
-              "version": "[3.3.0, )"
+              "version": "[3.1.0, )"
             },
             "Serilog.Sinks.Async": {
               "target": "Package",
-              "version": "[1.5.0, )"
+              "version": "[1.4.0, )"
             },
             "Serilog.Sinks.Console": {
               "target": "Package",
-              "version": "[4.0.1, )"
+              "version": "[3.1.1, )"
             },
             "Serilog.Sinks.File": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[4.1.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -141,14 +137,14 @@
         }
       }
     },
-    "C:\\RepositorySource\\KOKProject\\src\\KnowledgeSpace.ViewModels\\KnowledgeSpace.ViewModels.csproj": {
+    "C:\\RepositorySource\\11\\src\\KnowledgeSpace.ViewModels\\KnowledgeSpace.ViewModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\RepositorySource\\KOKProject\\src\\KnowledgeSpace.ViewModels\\KnowledgeSpace.ViewModels.csproj",
+        "projectUniqueName": "C:\\RepositorySource\\11\\src\\KnowledgeSpace.ViewModels\\KnowledgeSpace.ViewModels.csproj",
         "projectName": "KnowledgeSpace.ViewModels",
-        "projectPath": "C:\\RepositorySource\\KOKProject\\src\\KnowledgeSpace.ViewModels\\KnowledgeSpace.ViewModels.csproj",
+        "projectPath": "C:\\RepositorySource\\11\\src\\KnowledgeSpace.ViewModels\\KnowledgeSpace.ViewModels.csproj",
         "packagesPath": "C:\\Users\\Eri\\.nuget\\packages\\",
-        "outputPath": "C:\\RepositorySource\\KOKProject\\src\\KnowledgeSpace.ViewModels\\obj\\",
+        "outputPath": "C:\\RepositorySource\\11\\src\\KnowledgeSpace.ViewModels\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Eri\\AppData\\Roaming\\NuGet\\NuGet.Config",

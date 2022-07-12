@@ -7,7 +7,6 @@ namespace KnowledgeSpace.ViewModels.Systems
 {
     public class FunctionCreateRequestValidator : AbstractValidator<FunctionCreateRequest>
     {
-
         public FunctionCreateRequestValidator()
         {
             RuleFor(x => x.Id).NotEmpty().WithMessage("Id value is required")

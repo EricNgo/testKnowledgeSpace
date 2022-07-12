@@ -2,6 +2,9 @@
 KnowledgeSpace is a open source project for everyone. Every member can create new knowledge base record (KB) and share to community.
 For each KB, user can vote it and comment to below KB.
 
+# Migration
+- Add-Migration Initial -OutputDir Data/Migrations
+
 #Technology Stack
 1. ASP.NET Core 3.1
 2. Angular 8
@@ -19,3 +22,12 @@ For each KB, user can vote it and comment to below KB.
 - [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-3.1)
 - [Visual Studio](https://visualstudio.microsoft.com/)
 - [IdentityServer4](https://identityserver.io/)
+
+- https://medium.com/@matthew.bajorek/configuring-serilog-in-asp-net-core-2-2-web-api-5e0f4d89749c
+
+# Angular Installation
+- NPM (https://nodejs.org/en/)
+- https://git-scm.com/downloads
+- npm install -g @angular/cli
+- Visual Studio Code (https://code.visualstudio.com/)
+- Run command: git clone https://github.com/start-angular/SB-Admin-BS4-Angular-8.git admin-app

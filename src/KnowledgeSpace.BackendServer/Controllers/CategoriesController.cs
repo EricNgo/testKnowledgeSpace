@@ -1,10 +1,10 @@
 ﻿using KnowledgeSpace.BackendServer.Authorization;
-using KnowledgeSpace.BackendServer.Constant;
+using KnowledgeSpace.BackendServer.Constants;
 using KnowledgeSpace.BackendServer.Data;
 using KnowledgeSpace.BackendServer.Data.Entities;
 using KnowledgeSpace.BackendServer.Helpers;
 using KnowledgeSpace.ViewModels;
-using KnowledgeSpace.ViewModels.Content;
+using KnowledgeSpace.ViewModels.Contents;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
@@ -14,14 +14,12 @@ namespace KnowledgeSpace.BackendServer.Controllers
 {
     public class CategoriesController : BaseController
     {
-   
-            private readonly ApplicationDbContext _context;
+        private readonly ApplicationDbContext _context;
 
-            public CategoriesController(ApplicationDbContext context)
-            {
-                _context = context;
-            }
-
+        public CategoriesController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
 
         [HttpPost]
         [ClaimRequirement(FunctionCode.CONTENT_CATEGORY, CommandCode.CREATE)]
@@ -45,7 +43,7 @@ namespace KnowledgeSpace.BackendServer.Controllers
             }
             else
             {
-                return BadRequest(new ApiResponseBadRequest("Create category failed"));
+                return BadRequest(new ApiBadRequestResponse("Create category failed"));
             }
         }
 
@@ -100,7 +98,7 @@ namespace KnowledgeSpace.BackendServer.Controllers
         [HttpPut("{id}")]
         [ClaimRequirement(FunctionCode.CONTENT_CATEGORY, CommandCode.UPDATE)]
         [ApiValidationFilter]
-        public async Task<IActionResult> PutCategory(int id, [FromBody] CategoryCreateRequest request)
+        public async Task<IActionResult> PutCategory(int id, [FromBody]CategoryCreateRequest request)
         {
             var category = await _context.Categories.FindAsync(id);
             if (category == null)
@@ -108,7 +106,7 @@ namespace KnowledgeSpace.BackendServer.Controllers
 
             if (id == request.ParentId)
             {
-                return BadRequest(new ApiResponseBadRequest("Category cannot be a child itself."));
+                return BadRequest(new ApiBadRequestResponse("Category cannot be a child itself."));
             }
 
             category.Name = request.Name;
@@ -124,7 +122,7 @@ namespace KnowledgeSpace.BackendServer.Controllers
             {
                 return NoContent();
             }
-            return BadRequest(new ApiResponseBadRequest("Update category failed"));
+            return BadRequest(new ApiBadRequestResponse("Update category failed"));
         }
 
         [HttpDelete("{id}")]
@@ -159,5 +157,4 @@ namespace KnowledgeSpace.BackendServer.Controllers
             };
         }
     }
-    
 }

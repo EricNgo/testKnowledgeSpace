@@ -11,4 +11,3 @@ namespace KnowledgeSpace.ViewModels.Systems
         public string Name { get; set; }
     }
 }
-

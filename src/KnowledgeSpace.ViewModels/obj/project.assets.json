@@ -225,11 +225,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\RepositorySource\\KOKProject\\src\\KnowledgeSpace.ViewModels\\KnowledgeSpace.ViewModels.csproj",
+      "projectUniqueName": "C:\\RepositorySource\\11\\src\\KnowledgeSpace.ViewModels\\KnowledgeSpace.ViewModels.csproj",
       "projectName": "KnowledgeSpace.ViewModels",
-      "projectPath": "C:\\RepositorySource\\KOKProject\\src\\KnowledgeSpace.ViewModels\\KnowledgeSpace.ViewModels.csproj",
+      "projectPath": "C:\\RepositorySource\\11\\src\\KnowledgeSpace.ViewModels\\KnowledgeSpace.ViewModels.csproj",
       "packagesPath": "C:\\Users\\Eri\\.nuget\\packages\\",
-      "outputPath": "C:\\RepositorySource\\KOKProject\\src\\KnowledgeSpace.ViewModels\\obj\\",
+      "outputPath": "C:\\RepositorySource\\11\\src\\KnowledgeSpace.ViewModels\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Eri\\AppData\\Roaming\\NuGet\\NuGet.Config",
