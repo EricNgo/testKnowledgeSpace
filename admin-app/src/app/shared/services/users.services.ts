@@ -7,7 +7,7 @@ import { User } from '../models';
 import { UtilitiesService } from './utilities.service';
 
 @Injectable({ providedIn: 'root' })
-export class UserService extends BaseService {
+export class UsersService extends BaseService {
     constructor(private http: HttpClient, private utilitiesService: UtilitiesService) {
         super();
     }
@@ -29,7 +29,7 @@ export class UserService extends BaseService {
         };
         return this.http.get<Function[]>(`${environment.apiUrl}/api/users/${userId}/menu`, httpOptions)
             .pipe(map(response => {
-                const functions = this.utilitiesService.UnflatteringForLeftMenu(response); //list tree
+                const functions = this.utilitiesService.UnflatteringForLeftMenu(response);
                 return functions;
             }), catchError(this.handleError));
     }
